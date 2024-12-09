@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - EduHub</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'signup.css' %}"> <!-- Use the separate signup.css file -->
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h3>Create an Account</h3>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- This will render the signup form fields -->
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div class="signup-link">
+        <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

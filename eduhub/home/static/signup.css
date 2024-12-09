@@ -1,0 +1,76 @@
+/* Import styles from styles.css */
+@import url('styles.css'); /* This assumes styles.css is in the same directory or in a path accessible from signup.css */
+
+/* Specific styles for the signup page */
+body {
+  background-color: #6a0dad; /* Set the background to match the purple theme */
+  height: auto;  /* Allow the body to adjust its height based on content */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align items at the top to reduce height */
+  height: auto;  /* Allow the container height to be dynamic */
+  padding: 20px;
+  margin: 0;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px 15px;  /* Reduce padding for a more compact form */
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 30px;  /* Adjust this margin to give more or less space from the top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Allow the container to grow or shrink based on content */
+  max-height: 600px; /* Optionally limit the height */
+  overflow: auto; /* Add scroll if content exceeds max height */
+}
+
+.form-container h3 {
+  font-size: 1.8rem;
+  color: #6a0dad; /* Purple text for header */
+  text-align: center;
+}
+
+form input {
+  margin: 8px 0;
+  padding: 8px;  /* Reduce padding */
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Smaller font size for inputs */
+}
+
+form button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;  /* Adjust the font size */
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #6a0dad;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #ffcc00; /* Highlight signup link */
+  text-decoration: underline;
+}
+
+.signup-link a:hover {
+  color: #fff;
+}

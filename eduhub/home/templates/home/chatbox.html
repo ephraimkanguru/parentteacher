@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbox - EduHub</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'chatbox.css' %}">  <!-- Link to chatbox-specific CSS -->
+</head>
+<body>
+
+  <div class="container">
+    <div class="chatbox-container">
+      <h2>Welcome to the Chatbox</h2>
+
+      <!-- Messages Section -->
+      <div class="messages">
+        <!-- Display the teacher's message -->
+        <div class="message">
+          <span class="user">Teacher:</span> Hello, how can I help you today?
+        </div>
+      </div>
+
+      <!-- Input Section -->
+      <div class="input-section">
+        <input type="text" placeholder="Type your message..." />
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
